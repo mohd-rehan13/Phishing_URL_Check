@@ -35,4 +35,4 @@ To run the project locally:
    git clone https://github.com/yourusername/anti-phishing-url-checker.git
    cd anti-phishing-url-checker
  ## TO RUN THIS
-  https://github.com/mohd-rehan13/Phishing_URL_Check.git
+  https://github.com/mohd-rehan13/Phishing_URL_Check/
