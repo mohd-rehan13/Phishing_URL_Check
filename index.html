@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Phishing Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anti-Phishing URL Checker</h1>
+    <input type="text" id="urlInput" placeholder="Enter URL to check">
+    <button onclick="checkPhishing()">Check URL</button>
+    <p id="result"></p>
+
+    <script>
+        function checkPhishing() {
+            const urlInput = document.getElementById("urlInput").value;
+            const result = document.getElementById("result");
+
+            // List of known phishing URLs (example)
+            const phishingUrls = ["malicious-site.com", "fake-login.net", "scam-site.org"];
+
+            try {
+                const url = new URL(urlInput);
+                if (phishingUrls.includes(url.hostname)) {
+                    result.style.color = "red";
+                    result.innerHTML = "⚠️ Warning: This URL is potentially phishing!";
+                } else {
+                    result.style.color = "green";
+                    result.innerHTML = "✅ This URL seems safe!";
+                }
+            } catch {
+                result.style.color = "orange";
+                result.innerHTML = "❌ Invalid URL format!";
+            }
+        }
+    </script>
+</body>
+</html>
