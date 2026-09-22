@@ -3,7 +3,7 @@ A simple web-based Anti-Phishing URL Checker built by a student using HTML, CSS,
 ![Anti-Phishing Banner](banner.png)
 # Anti-Phishing URL Checker
 
-A simple web-based tool to detect potentially phishing URLs using basic pattern matching. Built as a student project to demonstrate basic web development and cybersecurity awareness.
+A lightweight, web-based phishing URL detector built using basic pattern matching. Created as a student project to showcase foundational web development and cybersecurity concepts.
 
 ## Features
 
