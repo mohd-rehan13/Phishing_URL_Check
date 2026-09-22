@@ -10,7 +10,7 @@ A simple web-based tool to detect potentially phishing URLs using basic pattern 
 - Takes a user-entered URL and checks against a list of known phishing domains
 - Highlights whether a URL is safe, malicious, or invalid
 - Instant response in a clean, user-friendly interface
-- Fully browser-based; no backend required.
+- Fully browser-based;
 
 ## How It Works
 
